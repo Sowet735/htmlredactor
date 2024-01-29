@@ -1,15 +1,16 @@
 html
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Графический редактор</title>
-  <style>
-    canvas {
-      border: 1px solid black;
-    }
-  </style>
-  <script>
-    window.onload = function() {
+	<title>Р“СЂР°С„РёС‡РµСЃРєРёР№ СЂРµРґР°РєС‚РѕСЂ</title>
+	<style>
+		canvas {
+			border: 1px solid black;
+		}
+	</style>
+	<script>
+		window.onload = function() {
       var canvas = document.getElementById("canvas");
       var ctx = canvas.getContext("2d");
       var drawing = false;
@@ -38,16 +39,18 @@ html
         }
       });
     }
-  </script>
+	</script>
 </head>
+
 <body>
-  <h1>Графический редактор</h1>
-  <canvas id="canvas" width="800" height="600"></canvas>
-  <br>
-  <label for="penWidth">Толщина пера:</label>
-  <input type="range" id="penWidth" min="1" max="10" value="1">
-  <br>
-  <label for="penColor">Цвет пера:</label>
-  <input type="color" id="penColor" value="#000000">
+	<h1>Р“СЂР°С„РёС‡РµСЃРєРёР№ СЂРµРґР°РєС‚РѕСЂ</h1>
+	<canvas id="canvas" width="800" height="600"></canvas>
+	<br>
+	<label for="penWidth">РўРѕР»С‰РёРЅР° РїРµСЂР°:</label>
+	<input type="range" id="penWidth" min="1" max="10" value="1">
+	<br>
+	<label for="penColor">Р¦РІРµС‚ РїРµСЂР°:</label>
+	<input type="color" id="penColor" value="#000000">
 </body>
+
 </html>
